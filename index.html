@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private S3 Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .info {
+            background-color: #e8f4fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .success {
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🔒 Private S3 Website</h1>
+        <div class="info">
+            <p class="success">✅ Success! You have access to this private S3 website.</p>
+            <p>This website is hosted on AWS S3 with IP-based access restrictions.</p>
+        </div>
+
+        <h2>Features:</h2>
+        <ul>
+            <li>✅ S3 Static Website Hosting</li>
+            <li>✅ Private Access (Block Public Access enabled)</li>
+            <li>✅ IP-based Access Control</li>
+            <li>✅ Custom Error Pages</li>
+        </ul>
+
+        <h2>Configuration Details:</h2>
+        <p>This bucket is configured with:</p>
+        <ul>
+            <li><strong>Public Access:</strong> Blocked</li>
+            <li><strong>Access Control:</strong> IP-based restrictions only</li>
+            <li><strong>Website Hosting:</strong> Enabled</li>
+            <li><strong>Index Document:</strong> index.html</li>
+            <li><strong>Error Document:</strong> error.html</li>
+        </ul>
+
+        <p><em>Only requests from the specified IP range can access this content.</em></p>
+    </div>
+</body>
+
+</html>
