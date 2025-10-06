@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Denied - Private S3 Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #dc3545;
+        }
+
+        .error {
+            color: #dc3545;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .info {
+            background-color: #f8d7da;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🚫 Access Denied</h1>
+        <div class="info">
+            <p class="error">❌ You don't have permission to access this resource.</p>
+            <p>This S3 bucket is configured with IP-based access restrictions.</p>
+        </div>
+
+        <h2>Why am I seeing this?</h2>
+        <p>This website is hosted on a private S3 bucket that only allows access from specific IP addresses. Your
+            current IP address is not in the allowed list.</p>
+
+        <h2>To gain access:</h2>
+        <ul style="text-align: left; display: inline-block;">
+            <li>Contact the administrator to add your IP address to the allowed list</li>
+            <li>Or access the website from an allowed IP address</li>
+        </ul>
+
+        <p><em>This is a security feature to protect the website content.</em></p>
+    </div>
+</body>
+
+</html>
